@@ -2,9 +2,9 @@
 
 /**
 * main - print the string in the put function
-* 
-* Decription: using the main function
-* this program prints "Programming is like building a multilingual puzzle
+*
+* Description: using the main function
+* this program prints "Programming is like building a multilingual puzzle"
 * Return: 0
 */
 int main(void)
