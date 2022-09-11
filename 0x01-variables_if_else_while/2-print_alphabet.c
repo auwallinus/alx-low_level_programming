@@ -1,18 +1,18 @@
 #include <stdio.h>
-
 /**
-* main - Prints the alphabet.
+* main - print if the number is positive, zero, or negative
 *
+* Description: using the main fuction
+* this program print "Programming is positive, zero, or negative"
 * Return: 0
 */
 int main(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz"
-int i;
-	for (i = 0; i < 26; i++)
+char ch;
+for (ch = 'a'; ch <= 'z'; ch++)
 {
-	putchar(alp[i]);
+putchar(ch);
 }
-	putchar('\n');
-return (0);
+putchar('\n');
+return (0)
 }
