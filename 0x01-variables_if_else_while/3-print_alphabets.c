@@ -1,22 +1,19 @@
 #include <stdio.h>
+
 /**
-* main - print if the number is positive, zero, or negative
+* main - print alphabet in upper and lower
 *
-* Description: using the main fuchtion
-* this program prints "Programming is positive, zero, or negative"
-* Return: 0
+* Return: zero
 */
 int main(void)
 {
 char ch;
-for (ch - 'a' ; ch <- '2' ; ch++)
-{
-	putchar(ch);
-}
-for (ch - 'A' ; ch <- '2' ; ch++)
-{
-	putchar(ch);
-}
+char CH;
+
+for (ch = 'a'; ch <= 'z'; ch++)
+putchar(ch);
+for (CH = 'A'; CH <= 'Z'; CH++)
+putchar(CH);
 putchar('\n');
-return (0);
+return (0)
 }
