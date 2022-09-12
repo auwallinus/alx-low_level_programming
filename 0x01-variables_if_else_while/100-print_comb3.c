@@ -3,8 +3,9 @@
 /**
  * main - Prints numbers between 00 to 89.
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
+int main(void)
 {
 int i, e;
 i = 48;
