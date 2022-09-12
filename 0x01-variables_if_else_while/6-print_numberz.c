@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 /**
- * maint - print if the number is positve, zero, or negative
+ * main - Prints numbers between 0 to 9.
  *
- * Return: Always 0 (Success)
+ * Retrun: Always 0 (Success)
  */
 int main(void)
 {
 int i;
-
 for (i = 48; i < 58; i++)
 {
 putchar(i);
