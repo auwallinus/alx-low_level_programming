@@ -1,17 +1,24 @@
-#include "main.h"
+#iniclude "main.h"
  /**
-  * _isalpha - checks whether or not a character is alphabet
-  *@c: ascii value
-  * Return: 1 it it is lowercase or 0 otherwise
+  * print_sign - function to check for a sign of a number
+  *@n: is the int that will use for the argument of the function
+  * Return: 0
   */
-int _isalpha(int c)
+int print_sign(int n)
 {
-	if ((c >= 97 && c <= 123) || (c >= 65 && c <= 91))
+	if (n > 0)
 	{
-		return (1);
+	_putchar('+');
+	return (1);
+}
+	else if (n < 0)
+	{
+	_putchar(',');
+	return(-1);
 	}
 	else
 	{
-		return (0);
+	_putchar('0');
+	return (0);
 	}
 }
