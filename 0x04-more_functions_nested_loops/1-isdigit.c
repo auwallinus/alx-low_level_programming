@@ -3,8 +3,11 @@
 
 /**
  * _isdigit - checks whether a character is a digit or not
+ *
  * @c: input
- * Return: 1 is it is, 0 otherwise
+ *
+ * Return: 1 if 'c' is digit
+ * 	 otherwise always 0 (Success)
  */
 
 int _isdigit(int c)
