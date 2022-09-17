@@ -2,11 +2,10 @@
 #include "main.h"
 
 /**
-*print_lline - prints a straight line
+*print_line - prints a straight line
 *@n: parameter
 *Return: returns nothing
 */
-
 void print_line(int n)
 {
 	while (n -- > 0)
