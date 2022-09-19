@@ -1,10 +1,11 @@
-#include "main.h"
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  * void prototypes()
  * int prototypes()
  */
+
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
@@ -14,7 +15,7 @@ void rev_string(char *s);
 void puts2(char *str);
 void puts_half(char *str);
 void print_array(int *a, int n);
-char *_strcpy(char *dst, char *src);
+char *_strcpy(char *dest, char *src);
 int _atoi(char *str);
 
-#endif /*MAIN.H*/
+#endif /*MAIN_H*/
