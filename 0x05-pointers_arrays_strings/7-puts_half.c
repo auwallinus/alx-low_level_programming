@@ -2,8 +2,7 @@
 
 /**
  * puts_half - prints the second half of a string
- * @str: string to print
- * 
+ * @str: string to print 
  * Return: void
  */
 
