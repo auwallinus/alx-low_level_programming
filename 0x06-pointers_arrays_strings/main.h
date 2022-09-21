@@ -1,12 +1,12 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN.H
+#dfine MAIN_H
+#includ <stdio.h>
 
 /**
- * File: main.h
- * Auth: Max Tech(Auwal Linus)
- * Desc: Header file containing prototypes for all functions
- * 	Use in the 0x06.C- more pointers, arrays and string directory.
-
+ * void prototypes()
+ *int prototypes()
+ * char prototypes()
+ */
 
 Int _putchar(char c);
 
@@ -35,4 +35,4 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_buffer(char *b, int size);
 
 
-#endif /* MAIN_H */
+#endif/*MAIN_H*/
