@@ -1,11 +1,11 @@
 #ifndf MAIN_H
 #define MAIN_H
-#include <stdio.h>
 
 /**
-*void prototypes()
-*int prototypes()
-*char prototypes()
+* File: main.h
+* Auth: Auwal Linus
+* Desc: Header file containing prototypes for all functions
+*	used in the 0x06-pointers_arrays_strings
 */
 Int _putchar(char c);
 void reverse_array(int *a, int n);
@@ -22,4 +22,4 @@ char *rot13(char *);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 char *add_strings(char *n1, char *n2, char *r, int r_index);
 
-#endif/*MAIN_H*/
+#endif
