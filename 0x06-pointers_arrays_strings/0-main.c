@@ -1,11 +1,12 @@
 #include "main.h"
-#includ <stdio.h>
+#include <stdio.h>
 
 /**
  *
  * main - check the code
  * Return: Always 0.
  */
+
 int main(void)
 {
 	char s1[98] = "Hello ";
@@ -16,6 +17,6 @@ int main(void)
   ptr = _strcat(s1, s2);
     printf("%s", s1);
      printf("%s", s2);
-printf("%s", ptr);
+printf("%s", p);
  return (0);
 }

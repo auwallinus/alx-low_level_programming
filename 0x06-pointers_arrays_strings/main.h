@@ -1,4 +1,4 @@
-#ifndf MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 
 /**
@@ -7,7 +7,7 @@
 * Desc: Header file containing prototypes for all functions
 *	used in the 0x06-pointers_arrays_strings
 */
-Int _putchar(char c);
+int _putchar(char c);
 void reverse_array(int *a, int n);
 void print_number(int n);
 void print_buffer(char *b, int size);
