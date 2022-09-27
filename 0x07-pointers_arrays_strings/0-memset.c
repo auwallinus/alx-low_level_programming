@@ -1,4 +1,4 @@
-/**
+//**
  * _memset - sets a given amount of bytes to a value at an address
  * 
  * @s: memory location to start at
