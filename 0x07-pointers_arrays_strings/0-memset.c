@@ -1,11 +1,11 @@
 /**
- *_memset - sets a given amount of bytes to a value at an address
+ * _memset - sets a given amount of bytes to a value at an address
  * 
- *@s: memory location to start at
- *@b: character to write to memory
- *@n: number of bytes to write
+ * @s: memory location to start at
+ * @b: character to write to memory
+ * @n: number of bytes to write
  * 
- *Returns: pointers to s
+ * Returns: pointers to s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
