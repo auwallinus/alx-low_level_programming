@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
  * _memset - sets a given amount of bytes to a value at an address
  * 
@@ -8,7 +5,7 @@
  * @b: character to write to memory
  * @n: number of bytes to write
  * 
- * Returns: pointers to s
+ * Returns: pointers to memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
