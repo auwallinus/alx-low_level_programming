@@ -5,7 +5,7 @@
  *@b: character to write to memory
  *@n: number of bytes to write
  * 
- *Return: pointer to s
+ *Returns a pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
