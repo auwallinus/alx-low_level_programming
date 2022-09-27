@@ -6,6 +6,7 @@
  * @n: number of bytes to write
  * Return: pointer to memory area s
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
 	char *ptr = s;
