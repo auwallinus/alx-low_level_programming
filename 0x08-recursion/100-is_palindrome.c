@@ -25,8 +25,8 @@ int checker(char *str, int len, int count)
 {
 	if (count >= len)
 		return (1);
-	if (str [len] == str[count])
-		 return (checker(str, len - 1, count + 1));
+	if (str[len] == str[count])
+	return (checker(str, len - 1, count + 1));
 	return (0);
 }
 /**
