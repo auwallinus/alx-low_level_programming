@@ -7,7 +7,6 @@
  * Author: Auwal Linus - Lagos Intranet.
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
 	int i;
