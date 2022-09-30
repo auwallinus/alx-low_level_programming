@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "main.h"
 
 /** 
  * main - Prints the number of arguments passed into main
  * @argc: Number of command line arguments
- * @argv: Array name
+ * @argv: Array of pointers to the arguments.
+ * Author: Auwal Linus - Lagos Intranet.
  * Return: 0
  */
 
