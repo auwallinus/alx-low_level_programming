@@ -37,7 +37,7 @@ while (cents > 0)
 		cents -= 2;
 		continue;
 	}
-	cent--;
+	cents--;
 }
 printf("%d\n", coins);
 return (0);
