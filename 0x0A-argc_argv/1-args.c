@@ -5,7 +5,7 @@
  * @argc: Number of command line arguments
  * @argv: Array of pointers to the arguments.
  * Author: Auwal Linus - Lagos Intranet.
- * Return: 0
+ * Return: 0 -success.
  */
 
 int main(int argc, char *argv[])
