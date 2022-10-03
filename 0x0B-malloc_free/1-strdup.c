@@ -2,33 +2,30 @@
 #include <stdlib.h>
 
 /**
- * _strdup - Returns a pointer to a newly-allocated space in memory
- *	     containing a copy of the string fiven as parameter.
- * @str: The string to be copied.
- *
- * Return: If str == NULL or insufficient memory is available - NULL.
- *	   Otherwise - a pinter to the duplicated string.
+ * _strdup - returns a pointer to a newly allocated space in memory.
+ * @str: string.
+ * 
+ * Return: pointer of an array of chars.
  */
+
 char *_strdup(char *str)
 {
-	char *duplicate;
-	int index, len = 0;
+	char *strout;
+	unsigned int i, j;
 
 	if (str == NULL)
 		return (NULL);
 
-	for (index = 0; str[index]; index++)
-		len++;
+	for (i = 0; str[i] != '\0'; i++)
+		;
 
-	duplicate = malloc(sizeof(char) * (len + 1));
+	strout = (char *)malloc(sizeof(char) * (i + 1));
 
-	if (duplicate == NULL)
+	if (strout == NULL)
 		return (NULL);
 
-	for (index = 0; str[index]; index++)
-		duplicate[index] = str[index];
+	for (j = 0; j <= i; j++)
+		strout[j] = str[j];
 
-	duplicate[len] = '\0';
-
-	return (duplicate);
+	return (strout);
 }
