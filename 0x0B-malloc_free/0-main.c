@@ -18,7 +18,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 	{
 		if (i % 10)
 		{
-			ptintf(" ");
+			printf(" ");
 		}
 		if (!(i % 10) && i)
 		{
