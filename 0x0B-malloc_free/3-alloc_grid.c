@@ -2,45 +2,43 @@
 #include <stdlib.h>
 
 /**
- *free_grid - frees a 2 dimensional grid.
- *@grid: multidimensional array of integers.
- *@height: height of the grid.
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers.
+ * @width: width of the array.
+ * @height: height of the array.
  *
- *Return: no return
+ * Return: pointer of an array of integers
  */
 
-void free_grid(int **grid, int height)
+int **alloc_grid(int width, int height)
 {
-	int **twoD;
-	int hgt_index, wid_index;
+	int **gridout;
+	int i, j;
 
-	if (width <= 0 || height <= 0)
+	if (width < 1 || height < 1)
 		return (NULL);
 
-	twoD = malloc(sizeof(int *) * height);
-
-	if (twoD == NULL)
-		return (NULL);
-
-	for (hgt_index = 0; hgt_index < height; hgt_index++)
+	gridout = malloc(height * sizeof(int *));
+	if (gridout == NULL)
 	{
-		twoD[hgt_index] = malloc(sizeof(int) * width);
-		
-		if (twoD[hgt_index] == NULL)
-		{
-		for (; height >= 0; height--)
-			free(grid[height]);
-		
-		free(grid);
+		free(gridout);
 		return (NULL);
 	}
-}
 
-for (hgt_index = 0; hgt_index < height; hgt_index++)
-{
-	for (wid_index = 0; wid_index < width; wid_index++)
-		twoD[hgt_index][wid_index] = 0;
-}
+	for (i = 0; i < height; i++)
+	{
+		gridout[i] = malloc(width * sizeof(int));
+		if (gridout[i] == NULL)
+		{
+			for (i--; i >= 0; i--)
+				free(gridout[i]);
+			free(gridout);
+			return (NULL);
+		}
+	}
 
-return (twoD);
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			gridout[i][j] = 0;
+
+	return (gridout);
 }
