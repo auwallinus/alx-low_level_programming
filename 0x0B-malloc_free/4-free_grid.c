@@ -5,7 +5,6 @@
  * free_grid - free a 2 dimensional grid.
  * @grid: multidimensional array of integers.
  * @height: height of the grid.
- * 
  * Return: SUCCESS
  */
 void free_grid(int **grid, int height)
@@ -21,7 +20,7 @@ void free_grid(int **grid, int height)
 				free(grid[j]);
 			}
 	
-			free(grid);
+		free(grid);
 		}
 	}
 }
