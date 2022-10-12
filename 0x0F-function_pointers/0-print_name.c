@@ -4,6 +4,7 @@
  * print_name - prints a name.
  * @name: The name to be printed.
  * @f: A pointer to a function that prints a name.
+ *
  * Return: Always 0.
  */
 
