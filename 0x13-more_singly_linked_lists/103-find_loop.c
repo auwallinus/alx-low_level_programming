@@ -1,38 +1,38 @@
 #include "lists.h"
+
 /**
- * find_listint_loop - finds the loop contained
- * in a linked list
- * @head : pointer to the head of the linked list
- * Return: pointer the node where the loop starts,
- * or NULL - if there is no loop
+ * find_listint_loop - finds the loop in a linked list.
+ * @head: pointer to first node.
+ * Return: the node address where the loop starts or NULL if there is no loop
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-listint_t *node1, *node2;
+	listint_t *ptr1 = NULL;
+	listint_t *ptr2 = NULL;
 
-if (head == NULL || head->next == NULL)
-return (NULL);
+	if (head == NULL)
+		return (NULL);
+	ptr1 = head;
+	ptr2 = head;
 
-node1 = head->next;
-node2 = (head->next)->next;
+	while (ptr1 && ptr2 && ptr2->next)
+	{
+		ptr1 = ptr1->next;
+		ptr2 = ptr2->next->next;
 
-while (node2)
-{
-if (node1 == node2)
-node1 = head;
-
-while (node1 != node2)
-{
-node1 = node1->next;
-node2 = node2->next;
-}
-
-return (node1);
-}
-
-node1 = node1->next;
-node2 = (node2->next)->next;
-}
-
-return (NULL);
+		if (ptr1 == ptr2)
+		{
+			while (1)
+			{
+				ptr2 = ptr1;
+				while (ptr2->next != ptr1 && ptr2->next != head)
+					ptr2 = ptr2->next;
+				if (ptr2->next == head)
+					break;
+				head = head->next;
+			}
+			return (head);
+		}
+	}
+	return (NULL);
 }
